@@ -1,26 +1,66 @@
 header {
-    width: 100%;
-    text-align: center;
-    background-color: #214778;
-    color: #fff;
-    padding: 20px;
-    z-index: 2;
-    border: none;
-    border-radius: 10px;
-    display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #214778;
+  color: #fff;
+  padding: 20px;
+  z-index: 2;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  box-sizing: border-box;
 }
 
 #header {
   width: 95%;
 }
 
+#second {
+display: flex;
+  flex-wrap: wrap;
+  width: 120%;
+  gap: 20px;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+
+#second section {
+  background-color: #FECF93;
+  margin: 10px;
+  padding: 20px;
+  width: 30%;
+  display: flex;
+
+}
+
+#content {
+  display: none;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+}
+
+#second section:hover {
+  background-color: #E6E6E6;
+}
+
+#second section:hover #content {
+  display: block;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
 section {
   text-align: center;
-    background-color: #FECF93;
-    margin: 10px; 
-    padding: 20px;
-    width: 30%;
-    
+  margin: 10px; 
+  padding: 20px;
+  width: 30%;
 }
 
 span {
@@ -28,14 +68,10 @@ span {
   text-align: left;
 }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
 ul {
-  list-style: none;
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 hr {
@@ -46,41 +82,62 @@ hr {
 body {
   background-color: antiquewhite;
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #about {
   border: #ffff solid;
   width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color:#FECF93 ;
 }
 
 #education {
- border: #ffff solid;
+  border: #ffff solid;
   width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
 }
 
 #experience {
- border: #ffff solid;
+  border: #ffff solid;
   width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  padding: 40px;
 }
 
 #skills {
- border: #ffff solid;
+  border: #ffff solid;
   width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 20px;
+  margin: 30px;
 }
 
 #comms {
-   border: #ffff solid;
+  border: #ffff solid;
   width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  scale: 100%;
-  width: 70%;
 }
 
 /* Add CSS for slide-in animation */
